@@ -1,0 +1,27 @@
+# ===============================================================
+# Core AI/ML & Data Science Frameworks
+# 핵심 AI/머신러닝 및 데이터 과학 프레임워크
+# ===============================================================
+torch
+torchvision
+transformers
+datasets
+diffusers
+accelerate
+bitsandbytes
+scikit-learn
+pandas
+numpy
+matplotlib
+
+# ===============================================================
+# Key Utilities & API Libraries
+# 주요 유틸리티 및 API 라이브러리
+# ===============================================================
+openai
+opencv-python
+tqdm          # 진행상황을 보여주는 progress bar
+einops        # 텐서(tensor) 연산을 위한 라이브러리
+timm          # PyTorch 이미지 모델 라이브러리
+gdown         # 구글 드라이브 파일 다운로더
+loguru        # 로깅(logging) 라이브러리
