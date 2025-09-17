@@ -1,0 +1,8 @@
+pyproject.toml
+src/clip_sim.py
+src/imtest.py
+src/imscore.egg-info/PKG-INFO
+src/imscore.egg-info/SOURCES.txt
+src/imscore.egg-info/dependency_links.txt
+src/imscore.egg-info/requires.txt
+src/imscore.egg-info/top_level.txt

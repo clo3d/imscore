@@ -1,22 +1,12 @@
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
-
 [project]
-name = "t2v_metrics"
-version = "2.0"
-description = "Evaluating Text-to-Visual Generation with Image-to-Text Generation."
-authors = [
-    {name="Zhiqiu Lin", email="zl279@cornell.edu"},
-    {name="Baiqi Li", email="libaiqi123@gmail.com"},
-    {name="Chancharik Mitra", email="chancharikm@gmail.com"},
-]
-readme = "README.md"
+name = "imscore_images"
+version = "1.0"
+description = "Add your description here"
 requires-python = ">=3.10"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
-]
+
 dependencies = [
     "torch==2.5.1",
     "torchvision==0.20.1",
@@ -35,7 +25,7 @@ dependencies = [
     "pandas>=2.1.4",
     "scipy>=1.11.4",
     "sentencepiece>=0.1.99",
-    "transformers==4.49.0",
+    "transformers",
     "datasets>=2.15.0",
     "tokenizers",
     "omegaconf",
@@ -84,7 +74,7 @@ dependencies = [
     "qwen-vl-utils",
     "flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.5.8/flash_attn-2.5.8+cu122torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl",
     "func_timeout",
-    "timm>=1.0.15",
+    "timm",
     "torch>=2.3.1",
     "gitpython",
     "torchvision>=0.18.1",
@@ -94,12 +84,8 @@ dependencies = [
     "pytorchvideo @ git+https://github.com/linzhiqiu/pytorchvideo.git",
     "diffusers",
     "nltk",
-    "rouge-score"
+    "rouge-score",
+    "imscore",
+    "image-reward"
 ] 
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["t2v_metrics*"]
-
-[tool.setuptools.package-data]
-'t2v_metrics' = ['**/*.json', '**/*.yaml', '**/*.py']
