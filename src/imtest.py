@@ -115,7 +115,7 @@ def score_image(model_name, image_path, prompts):
                         score[9] = 1-score[9]  # reverse the score for prompt 7
                     print(fpath,score)
                     scorelist.append(score)
-                print(scorelist)
+            print(np.array(scorelist))
             
     return scorelist,np.mean(scorelist)
     
